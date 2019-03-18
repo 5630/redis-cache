@@ -1,0 +1,14 @@
+### redis에 저장된 데이터를 조회한다
+GET http://localhost:8080/profile/jihyun
+
+### 전송 데이터를 redis 저장한다
+### TTL(Time to Leave) 방식의 캐쉬 처럼 10초 후에 삭제한다
+POST http://localhost:8080/profile
+Content-Type: application/json
+
+{
+    "name": "jihyun",
+    "coffee": "americano",
+    "snack": "Choco Boy"
+}
+
